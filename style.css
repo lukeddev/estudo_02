@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+
+  font-family: 'Open Sans', sans-serif;
+
+  background: linear-gradient(180deg, rgba(227, 255, 248, 0) 80%, rgba(227, 255, 248, 0.38) 100%);
+
+  min-height: 100vh;
+}
+
+.page {
+  /* border: 1px solid red;  use esse comendo para poder ver as bordas */
+  width: 1000px; /*aqui estamos especificando o tamanho total da class page, que é a prinipal */
+  margin: 0 auto;
+  padding-top: 65px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between; /*aqui estamos alinhando os box dentro do header, deixando eles nas extremidades */
+  align-items: center;
+  margin-bottom: 55px;
+
+}
+
+ul {
+  list-style: none; /* aqui estamos tirando as bolinhas da litas */
+  display: flex;
+  gap: 48px; /* o display flex libera essa opção de gap, que coloca espaço entre os itens */
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #1F1534;
+  text-decoration: none;
+}
+
+ul li a {
+  opacity: 0.5;
+}
+
+ul li a:hover { /*: = pseudoclasse. hover: Significa que sempre que eu passar o mouse
+  em cima vai acontecer algo.*/ 
+  font-weight: bold;
+  opacity: 1;
+}
+
+h1, ul {
+  font-family: 'Mulish', sans-serif;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 49px;
+  line-height: 56px;
+  color: #1F1534;
+  font-weight: normal;
+
+  width: 490px; /*aqui é pra quebra de linha do h1, poderia
+  ser feito com a tag <br/> ou dessa forma, que é limitando
+  o tamanho da box */
+}
+
+h1 span {
+  color: #89c5cc;
+  font-weight: bold;
+}
+
+section p {
+  font-size: 14px;
+  line-height: 28px;
+  color: #7d7987;
+
+  margin: 40px 0;
+}
+
+button {
+  color: white;
+  text-transform: uppercase; /*aqui é a transformação do texto
+  todo para caixa alta*/  
+  font-family: 'Open Sans', sans-serif;
+
+  background: #69B99D;
+  border: none;
+  padding: 14px 32px 15px;
+  border-radius: 4px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  cursor: pointer;
+}
+
+button:hover {
+  background: #508975;
+}
+
+footer {
+  font-size: 14px;
+  line-height: 28px;
+
+  text-align: center;
+
+  margin-top: 80px;
+}
+
+footer a {
+  font-weight: bold;
+}
+
+#balls {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
